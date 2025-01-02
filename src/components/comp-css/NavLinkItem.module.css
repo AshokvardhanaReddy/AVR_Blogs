@@ -1,0 +1,17 @@
+
+
+.navlink_item{
+    border : 1px solid red;
+    text-decoration: none;
+    color : black;
+    padding : 0px 30px;
+    border-radius: 5px;
+    width : minmax(auto, auto);
+    &:hover{
+        background-color: lightgray;
+    }
+}
+.active{
+    background-color: var(--bg-color);
+}
+

@@ -1,0 +1,57 @@
+.carousel_section_main{
+    border : 1px solid blue;
+    display: grid;
+    grid-template-columns: auto 80% auto;
+    width : 100vw;
+    place-items: center;
+    padding : 5px 5vw;
+}
+.carousel_menu_icon{
+    font-size : 2rem;
+    display: none;
+}
+.carousel_slide_icons{
+    font-size : 1.5rem;
+    color : #21CC5A;
+    cursor: pointer;
+    &:hover{
+        background-color: beige;
+    }
+}
+
+.slider_main{
+    border : 1px solid red;
+    width: 100%;
+}
+.carousel_slider{
+ background-color: white;
+ padding : 8px 8px;
+
+}
+
+
+@media screen and (max-width : 768px){
+    .carousel_section_main{
+        grid-template-columns: 5% 95%;
+        gap : 10px;
+        width : 100vw;
+        padding : 3px 5vw;
+    }
+    .carousel_menu_icon{
+        font-size : 1.5rem;
+        display: block;
+    }
+    .carousel_slide_icons{
+        font-size : 1rem;
+        display:none;
+    }
+    
+    .slider_main{
+        border : 1px solid red;
+        width: 100%;
+    }
+    .carousel_slider{
+     padding : 4px 4px;
+    }
+    
+}
