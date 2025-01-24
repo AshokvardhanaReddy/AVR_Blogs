@@ -4,7 +4,7 @@
 
 
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">Live Preview</a>
+  <a href="https://avrblogs.netlify.app/">Live Preview</a>
 </div>
 
 <hr>

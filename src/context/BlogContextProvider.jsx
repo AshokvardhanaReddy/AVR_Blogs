@@ -5,14 +5,14 @@ export const BlogContext = createContext();
 
 const BlogContextProvider = (props) => {
 
-  const url = process.env.BLOG_SERVER_URL;
-  
+  // const url = process.env.BLOG_SERVER_URL;
+
   const [menu, setMenu] = useState("All");
   const [blogsData, setBlogsData] = useState([]);
   const [displayBlogId, setDisplayBlogId] = useState("");
 
  
-  // const url = "https://srfrozenfoods-server.netlify.app/api/"
+  const url = "https://srfrozenfoods-server.netlify.app/api/"
 
   const fetchBlogData = useCallback(() => {
     fetch(`${url}blogs`)
