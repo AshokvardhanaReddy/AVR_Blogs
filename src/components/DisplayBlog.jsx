@@ -8,11 +8,11 @@ import { BlogContext } from '../context/BlogContextProvider';
 import PageLoading from "./PageLoading";
 
 const DisplayBlog = () => {
-  const {displayBlogId} = useContext(BlogContext);
+  const {url, displayBlogId} = useContext(BlogContext);
 
   const [data, setData] = useState()
 
-  const url = "https://srfrozenfoods-server.netlify.app/api/";
+  
   const fetchBlogData = async () => {
     await fetch(`${url}blogs/${displayBlogId}`)
     .then((res) => res.json())

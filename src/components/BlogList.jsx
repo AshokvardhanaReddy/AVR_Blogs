@@ -1,18 +1,17 @@
 // import { blog_data } from '../assets/assets'
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import BlogItem from "./BlogItem";
+import { BlogContext } from "../context/BlogContextProvider";
 
 const BlogList = () => {
   const [menu, setMenu] = useState("All");
   const [blogs, setBlogs] = useState([]);
-
-  const url = "https://srfrozenfoods-server.netlify.app/api/";
+  const { url } = useContext(BlogContext);
   const fetchBlogData = async () => {
     await fetch(`${url}blogs`)
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   };
- 
 
   useEffect(() => {
     fetchBlogData();
@@ -77,22 +76,22 @@ const BlogList = () => {
         </div>
       </div>
       <div className="bg-[#E6E6FF]  w-[100%] m-auto py-4 ">
-      <div className="w-[80%] m-auto grid grid-cols-4 gap-4 md:w-[90%] md:gap-3 md:grid-cols-3 sm:w-[97%] sm:grid-cols-2 sm:gap-2">
-        {blogs
-          .filter((item) => (menu === "All" ? true : item.category === menu))
-          .map((item, index) => {
-            return (
-              <BlogItem
-                key={index}
-                id={item._id}
-                image={item.image}
-                title={item.title}
-                description={item.description}
-                category={item.category}
-              />
-            );
-          })}
-      </div>
+        <div className="w-[80%] m-auto grid grid-cols-4 gap-4 md:w-[90%] md:gap-3 md:grid-cols-3 sm:w-[97%] sm:grid-cols-2 sm:gap-2">
+          {blogs
+            .filter((item) => (menu === "All" ? true : item.category === menu))
+            .map((item, index) => {
+              return (
+                <BlogItem
+                  key={index}
+                  id={item._id}
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                  category={item.category}
+                />
+              );
+            })}
+        </div>
       </div>
     </>
   );

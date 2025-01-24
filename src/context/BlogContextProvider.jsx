@@ -8,7 +8,7 @@ const BlogContextProvider = (props) => {
     const [blogsData, setBlogsData] = useState([]);
     const [displayBlogId, setDisplayBlogId] = useState("");
    
-    const url = "https://srfrozenfoods-server.netlify.app/api/";
+    const url = process.env.BACKEND_SERVER_URL;
     const fetchBlogData = async () => {
       await fetch(`${url}blogs`)
         .then((res) => res.json())
@@ -20,7 +20,7 @@ const BlogContextProvider = (props) => {
     }, []);
 
 
-    const contextValue = {menu, setMenu, blogsData, setBlogsData, displayBlogId, setDisplayBlogId}
+    const contextValue = {url, menu, setMenu, blogsData, setBlogsData, displayBlogId, setDisplayBlogId}
 
     return (
         <BlogContext.Provider value={contextValue}>

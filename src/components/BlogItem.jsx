@@ -13,7 +13,6 @@ const { setDisplayBlogId} = useContext(BlogContext);
       <NavLink to={`/${category}/${id}`} className = "" >
         <img
           src="https://dummyimage.com/250"
-          // src = {image}
           alt=""
           className="h-[250px] w-[100%] px-2 py-2 rounded"
         />
