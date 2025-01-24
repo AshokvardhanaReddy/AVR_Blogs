@@ -1,13 +1,14 @@
 import { createContext, useEffect, useState, useCallback } from "react";
 
 export const BlogContext = createContext();
+const url = process.env.BLOG_SERVER_URL;
 
 const BlogContextProvider = (props) => {
   const [menu, setMenu] = useState("All");
   const [blogsData, setBlogsData] = useState([]);
   const [displayBlogId, setDisplayBlogId] = useState("");
 
-  const url = process.env.BLOG_SERVER_URL;
+ 
   // const url = "https://srfrozenfoods-server.netlify.app/api/"
 
   const fetchBlogData = useCallback(() => {
