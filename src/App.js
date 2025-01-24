@@ -6,7 +6,6 @@ import Footer from "./components/Footer.jsx";
 import DisplayBlog from './components/DisplayBlog.jsx';
 import Navbar from './components/Navbar.jsx';
 import DisplayBlogList from './components/DisplayBlogList.jsx';
-import PageLoading from './components/PageLoading.jsx';
 
 function App() {
   return (
