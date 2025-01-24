@@ -1,65 +1,50 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400&display=swap');
 *{
     box-sizing: border-box;
     margin : 0;
-    border: 0;
-    line-height: 2;
+    padding: 0;
+    font-family: "Poppins", serif;
+    /* background-color: #E6E6FF; */
 }
+
 :root{
-    --font-poppins : "Poppins", sans-serif;
-    --bg-color : #ddf3ec;
-    --first-color: hsl(222, 80%, 58%);
-    --dark-color: hsl(222, 24%, 8%);
-    --title-color: hsl(222, 8%, 8%);
-    --text-color-light: hsl(222, 8%, 65%);
-    --white-color: #fff;
-    --body-color: hsl(222, 100%, 99%);
-    --border-radius-small : 10px;
+    /* --bg-primary  : #ebeae6; */
+    --font-heading : "Lato", serif;
 }
+
 html{
-    font-size: 16px;
-    width : 100%;
+    font-size : 16px;
+}
+
+a{
+    text-decoration: none;
+    color : inherit;
 }
 
 body{
-    background-color: var(--bg-color);
-    font-family: var(--font-poppins);
-    width : 100%;
+    font-size : 1rem;
+    /* color: #5D5D5B; */
 }
-@media screen and (max-width:320px){
+
+@media screen and (max-width : 320px){
     body{
-        font-size : 0.75rem;
-    }
-}
-@media screen and (min-width:321px) and (max-width : 850px){
-    body{
-        font-size: 0.875rem;
-    }
-}
-@media screen and (min-width : 851px) {
-    body{
-        font-size: 1rem;
+    font-size : max(0.25rem, 0.5rem)
     }
 }
 
-
-
-@layer utilities {
-    /* Chrome, Safari and Opera */
-    .scrollbar-hidden::-webkit-scrollbar {
-      display: none;
+@media screen and (min-width : 320px) and (max-width : 750px) {
+    body{
+        font-size : max(0.6rem, 0.8rem)
     }
-  
-    .scrollbar-hidden {
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* IE and Edge */
+}
+
+@media screen and (min-width : 751px) {
+    body{
+        font-size : 0.85rem;
     }
-  }
+}

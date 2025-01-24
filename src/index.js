@@ -2,21 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import  StoreContextProvider  from './context/StoreContext';
-import { BrowserRouter} from "react-router-dom";
-
+import { BrowserRouter } from 'react-router-dom';
+import BlogContextProvider from './context/BlogContextProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <>
-        <BrowserRouter>
-            <StoreContextProvider>
-                <App />
-            </StoreContextProvider>
-
-        </BrowserRouter></>
+  <BrowserRouter>
+  <BlogContextProvider>
+    <App />
+    </BlogContextProvider>
+  </BrowserRouter>
 
 );
 
-
-reportWebVitals();
