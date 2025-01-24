@@ -1,9 +1,12 @@
 import { createContext, useEffect, useState, useCallback } from "react";
 
 export const BlogContext = createContext();
-const url = process.env.BLOG_SERVER_URL;
+
 
 const BlogContextProvider = (props) => {
+
+  const url = process.env.BLOG_SERVER_URL;
+  
   const [menu, setMenu] = useState("All");
   const [blogsData, setBlogsData] = useState([]);
   const [displayBlogId, setDisplayBlogId] = useState("");
