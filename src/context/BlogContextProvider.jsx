@@ -7,13 +7,16 @@ const BlogContextProvider = (props) => {
   const [blogsData, setBlogsData] = useState([]);
   const [displayBlogId, setDisplayBlogId] = useState("");
 
-  const url = process.env.BACKEND_SERVER_URL;
+  const url = process.env.BLOG_SERVER_URL;
+  // const url = "https://srfrozenfoods-server.netlify.app/api/"
 
   const fetchBlogData = useCallback(() => {
     fetch(`${url}blogs`)
       .then((res) => res.json())
       .then((data) => setBlogsData(data));
   }, [url]);
+
+  console.log(blogsData)
 
   useEffect(() => {
     fetchBlogData();
