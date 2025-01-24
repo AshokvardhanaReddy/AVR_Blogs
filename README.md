@@ -58,8 +58,18 @@ A modern and responsive blog website built to showcase content effectively, feat
 ## 🧑‍🤝‍🧑 Project Visuals
 
 ### 💻 Desktop Preview:
+- **Home Page:**
+![My Image](src/assets/AVR_Blogs_Desktop_View_1.jpeg)
+
+- **Blog Page:**
+![My Image](src/assets/AVR_Blogs_Desktop_View_2.jpeg)
 ### 📟 Tablet Preview :
 ### 📱 Mobile Preview :
+- **Home Page:**
+![My Image](src/assets/AVR_Blogs_Mobile_View_1.jpg)
+
+- **Blog Page:**
+![My Image](src/assets/AVR_Blogs_Mobile_View_2.jpg)
 
 
 <hr>
