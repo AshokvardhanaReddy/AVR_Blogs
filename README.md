@@ -76,12 +76,12 @@ A modern and responsive blog website built to showcase content effectively, feat
 <div style = "display : flex; gap:2rem; " >
 <div>
 <li>Home Page </li>
- <img src="src/assets/AVR_Blogs_Mobile_View_1.jpg" alt="My Image" width="600px" style= "margin : 12px 0px 48px 0px">
+ <img src="src/assets/AVR_Blogs_Mobile_View_1.jpg" alt="My Image" width="48%" style= "margin : 12px 0px 48px 0px">
 </div>
 
 <div>
 <li>Blog Page </li> 
-<img src="src/assets/AVR_Blogs_Mobile_View_2.jpg" alt="My Image" width="600px" style= "margin : 12px 0px 48px 0px" >
+<img src="src/assets/AVR_Blogs_Mobile_View_2.jpg" alt="My Image" width="48%" style= "margin : 12px 0px 48px 0px" >
 </div>
 </div>
 
