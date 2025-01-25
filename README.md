@@ -58,19 +58,32 @@ A modern and responsive blog website built to showcase content effectively, feat
 ## 🧑‍🤝‍🧑 Project Visuals
 
 ### 💻 Desktop Preview:
-- **Home Page:**
-![My Image](src/assets/AVR_Blogs_Desktop_View_1.jpeg)
+- **Home Page:** 
+<img src="src/assets/AVR_Blogs_Desktop_View_1.jpeg" alt="My Image" width="100%" style= "margin : 12px 0px 48px 0px">
 
 - **Blog Page:**
-![My Image](src/assets/AVR_Blogs_Desktop_View_2.jpeg)
+<img src="src/assets/AVR_Blogs_Desktop_View_2.jpeg" alt="My Image" width="100%" style= "margin : 12px 0px 48px 0px">
+
 ### 📟 Tablet Preview :
+- **Home Page:**  
+ <img src="src/assets/AVR_Blogs_Tablet_View_1.jpeg" alt="My Image" width="900px" style= "margin : 12px 0px 48px 0px">
+
+- **Blog Page:**  
+<img src="src/assets/AVR_Blogs_Tablet_View_2.jpeg" alt="My Image" width="900px" style= "margin : 12px 0px 48px 0px" >
+
 ### 📱 Mobile Preview :
-- **Home Page:**
-![My Image](src/assets/AVR_Blogs_Mobile_View_1.jpg)
 
-- **Blog Page:**
-![My Image](src/assets/AVR_Blogs_Mobile_View_2.jpg)
+<div style = "display : flex; gap:2rem; " >
+<div>
+<li>Home Page </li>
+ <img src="src/assets/AVR_Blogs_Mobile_View_1.jpg" alt="My Image" width="600px" style= "margin : 12px 0px 48px 0px">
+</div>
 
+<div>
+<li>Blog Page </li> 
+<img src="src/assets/AVR_Blogs_Mobile_View_2.jpg" alt="My Image" width="600px" style= "margin : 12px 0px 48px 0px" >
+</div>
+</div>
 
 <hr>
 
@@ -85,4 +98,4 @@ A modern and responsive blog website built to showcase content effectively, feat
 
 ## 🔧 Project Status
 - Project Deployed
-- Working on Addition Fetatures such as UI ⏳ 
+- Working on Addition Fetatures  ⏳ 
